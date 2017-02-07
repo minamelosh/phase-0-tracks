@@ -1,0 +1,24 @@
+section#contact-info {
+  font-size: .8em;
+  
+}
+
+section.job {
+  background-color: #e9e5dc;
+  padding: 0.1px 0px 1px 10px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 25px;
+}
+
+ul.lists {
+  font-size: .8em;
+}
+
+section#contact-info:hover {
+  font-size: 2em;
+}
+
+ol li {
+  color: grey;
+  font-size: .8em;
+}
