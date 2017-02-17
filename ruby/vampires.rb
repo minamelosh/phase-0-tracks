@@ -8,13 +8,6 @@ until survey == employees
   #Human name?
   puts "What is your name?"
   name = gets.chomp
-  if name == "Drake Cula"
-    vampire = true
-  elsif name == "Tu Fang"
-    vampire = true
-  else
-    vampire = false
-  end
 
   #Human age?
   puts "How old are you?"
@@ -28,7 +21,7 @@ until survey == employees
   end
 
   #Does the year they were born match their age?? If not they may be lying!
-  puts "Where year were you born?"
+  puts "What year were you born?"
   year = gets.chomp.to_i
   calculated_age = 2017 - year
   if calculated_age == age
@@ -74,17 +67,25 @@ until survey == employees
   end
 
   #Are they a Vampire? Lets evaluate based on their input.
-  if vampire = true
-    puts "Definitely a vampire."
-  elsif human_age && likes_garlic
-    puts "Probably not a vampire."
-  elsif imortal && hates_garlic || waives_insurance
-    puts "Probably a vampire."
-  elsif imortal && hates_garlic && waives_insurance
-    puts "Almost certainly a vampire."
-  else
-    puts "Results inconclusive."
-  end
+  Q1 = (human_age && likes_garlic || health_insurance)
+  Q2 = (imortal && hates_garlic || waives_insurance)
+  Q3 = (imortal && hates_garlic && waives_insurance)
+
+    if Q1
+      vampire = "Probably not a vampire."
+    end
+    if Q2
+      vampire = "Probably a vampire."
+    end
+    if Q3
+      vampire = "Almost certainly a vampire."
+    end
+    if name == "Drake Cula" || name == "Tu Fang"
+      vampire = "Definitely a vampire."
+    end
+    if Q1 && Q2 && Q3 && definitely_vampire = false
+      vampire = "Results inconclusive."
+    end
 
   #Allergy Survey, Vampires are allergic to sunshine!
   valid_allergy = true
@@ -92,15 +93,18 @@ until survey == employees
     puts "Please name any allergies you have, type done when finished."
     allergy = gets.chomp
     if allergy == "done"
-      puts "Thank you!"
       valid_allergy = false
     elsif allergy == "sunshine"
-      puts "Probably a vampire"
+      if vampire = "Probably not a vampire."
+        vampire = "Probably a vampire."
+      end
       valid_allergy = false
     else
       valid_allergy = true
     end
   end
+
+  puts vampire
 
   survey += 1
 end
