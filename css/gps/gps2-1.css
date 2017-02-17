@@ -1,3 +1,34 @@
+.column-1{
+  float: left;
+  width:45%;
+  margin-left:20px;
+}
+.column-2{
+  float: right;
+  width:45%;
+  margin-right:20px;
+}
+header, footer{
+ clear: both;
+ text-align: center;
+ background-color: teal;
+}
+summary:hover {
+  color:blue;
+}
+details p {
+  background-color:yellow;
+  font-family:cursive;
+}
 body{
-  background-color: pink;
+  font-family: arial;
+}
+h1, h2 {
+  font-style: italic;
+}
+  article:nth-child(even) {background: #CCC}
+  img {
+    width: 40%;
+    float: right;
+    height: 100px;
 }
