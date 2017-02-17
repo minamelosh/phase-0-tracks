@@ -83,7 +83,7 @@ until survey == employees
     if name == "Drake Cula" || name == "Tu Fang"
       vampire = "Definitely a vampire."
     end
-    if Q1 && Q2 && Q3 && definitely_vampire = false
+    if Q1 && Q2 && Q3 && definitely_vampire == false
       vampire = "Results inconclusive."
     end
 
@@ -95,7 +95,7 @@ until survey == employees
     if allergy == "done"
       valid_allergy = false
     elsif allergy == "sunshine"
-      if vampire = "Probably not a vampire."
+      if vampire == "Probably not a vampire."
         vampire = "Probably a vampire."
       end
       valid_allergy = false
