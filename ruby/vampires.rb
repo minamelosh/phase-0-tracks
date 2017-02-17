@@ -1,5 +1,5 @@
 puts "How many employees will be procressed?"
-employees = gets.chomp
+employees = gets.chomp.to_i
 survey = 0
 
 until survey == employees
@@ -8,9 +8,9 @@ until survey == employees
   #Human name?
   puts "What is your name?"
   name = gets.chomp
-  if name == “Drake Cula”
+  if name == "Drake Cula"
     vampire = true
-  elsif name == “Tu Fang”
+  elsif name == "Tu Fang"
     vampire = true
   else
     vampire = false
@@ -21,12 +21,13 @@ until survey == employees
   age = gets.chomp.to_i
   if age < 100
     human_age = true
+    imortal = false
   else
     human_age = false
     imortal = true
   end
 
-  #Does the year they were born match their age? If not they may be lying!
+  #Does the year they were born match their age?? If not they may be lying!
   puts "Where year were you born?"
   year = gets.chomp.to_i
   calculated_age = 2017 - year
@@ -73,16 +74,16 @@ until survey == employees
   end
 
   #Are they a Vampire? Lets evaluate based on their input.
-  if human_age && likes_garlic
-    puts “Probably not a vampire.”
-  elsif immortal && hates_garlic || wavies_insurance
-    puts “Probably a vampire.”
-  elsif immortal && hates_garlic && waives_insurance
-    puts “Almost certainly a vampire.”
-  elsif vampire
-    puts “Definitely a vampire.”
+  if vampire = true
+    puts "Definitely a vampire."
+  elsif human_age && likes_garlic
+    puts "Probably not a vampire."
+  elsif imortal && hates_garlic || waives_insurance
+    puts "Probably a vampire."
+  elsif imortal && hates_garlic && waives_insurance
+    puts "Almost certainly a vampire."
   else
-    puts “Results inconclusive.”
+    puts "Results inconclusive."
   end
 
   #Allergy Survey, Vampires are allergic to sunshine!
