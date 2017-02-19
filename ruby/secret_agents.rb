@@ -49,6 +49,6 @@ desire = gets.chomp
   end
 end
 
-#Nested message
+#Nested method call
 #decrypt(encrypt("swordfish"))
 #this nested message call works because our program first evaluates our encrypt method call on the string "swordfish," and then runs our decrypt method on the result and this gives us back the original string "swordfish."
