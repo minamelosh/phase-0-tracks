@@ -8,7 +8,7 @@ def encrypt(str)
           end
             count += 1
       end
-      puts str
+      return str
   end
 
 #Decryting password, change each letter to the previous letter in the alphabet
@@ -23,7 +23,7 @@ def encrypt(str)
           str[count] = new_letter
           count += 1
       end
-      puts str
+      return str
   end
 
 # OUR DRIVER CODE
@@ -51,4 +51,4 @@ end
 
 #Nested message
 #decrypt(encrypt("swordfish"))
-#this did not work for us, somehow it seems encrypt(swordfish) evaluates by printing correctly to the screen, but has a return value of nil.  This causes a bug and decrypt can not evaluate.
+#this nested message call works because our program first evaluates our encrypt method call on the string "swordfish," and then runs our decrypt method on the result and this gives us back the original string "swordfish."
