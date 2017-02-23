@@ -144,23 +144,23 @@ end
 
 #Hash
 animals = {
-  animal0: "cat",
-  animal1: "mouse",
-  animal2: "dog",
-  animal3: "bunny"
+  0=>"cat",
+  1=>"mouse",
+  2=>"dog",
+  3=>"bunny",
+  4=>"elephant"
 }
-animals2 = {}
-
-count = 0
-while count < animals.length
-  animals.delete_if {|index, animal| index < }
-  p animals
-  count += 1
-end
-
-#animals.each do |index, animal|
-  #animals2 = animals.delete( "animal0" )
-#end
 
 p animals
-p animals2
+animals2 = {}
+
+count = 1
+
+until count > animals.length
+
+  animals.each do |number, animal|
+    animals2 = animals.delete_if {|number, animal| number < count }
+  end
+  count += 1
+  p animals2
+end
