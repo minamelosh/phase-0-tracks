@@ -64,3 +64,36 @@ def fib(num)
 end
 
 p fib(100)
+
+
+#SORTING METHOD
+#BUBBLE SORT
+#Declare an array
+array = [ 5, 7, 9, 3]
+
+#Method that compares each index value to the one directly to the right and decides which value is higher. If the value on the left is higher than the value on the right, the two numbers will swap places.
+
+#This method will evaluate until it runs through each number of the array with zero swaps.
+
+  def bubble_sort(array)
+    length = array.length
+    loop do
+      swapped = false
+
+      (length-1).times do |count|
+        if array[count] > array[count+1]
+          array[count], array[count+1] = array[count+1], array[count]
+          swapped = true
+        end
+      end
+
+      break if not swapped
+    end
+
+    array
+  end
+
+#Stores array in order from lowest value to highest value in a new array
+p array
+ordered_array = bubble_sort(array)
+p ordered_array
