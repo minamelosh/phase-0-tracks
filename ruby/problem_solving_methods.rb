@@ -66,8 +66,9 @@ end
 p fib(100)
 
 
-#SORTING METHOD
-#BUBBLE SORT
+#SORTING METHODS
+
+#1. BUBBLE SORT
 #Declare an array
 array = [ 5, 7, 9, 3]
 
@@ -93,7 +94,36 @@ array = [ 5, 7, 9, 3]
     array
   end
 
+#2. INSERTION SORT
 #Stores array in order from lowest value to highest value in a new array
 p array
 ordered_array = bubble_sort(array)
 p ordered_array
+
+#METHOD to find the smallest digit in an array
+def smallest list
+    smallest=list[0]
+    i=0
+    list.each do |num|
+        if smallest > num
+            smallest=num
+        end
+    end
+    return smallest
+end
+
+#METHOD to remove smallest number from an array and add it in other
+def sorting list
+    unsorted=list
+    sorted=[]
+    i=list.length
+    until sorted.length==i #list.length is goint to be changing
+        current=smallest unsorted
+        sorted.push(current)
+        unsorted-=[current]
+    end
+    return sorted
+end
+numbers=[4,5,2,1,6]
+#CALL METHOD
+p sorting numbers
