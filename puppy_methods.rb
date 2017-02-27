@@ -9,6 +9,7 @@ end
 
 =begin
 #Species
+Type of Dog:
 
 
 #Characteristics
