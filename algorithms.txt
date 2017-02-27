@@ -1,0 +1,67 @@
+-Look around, see all elevators - big metal doors the slide open. We want to use one of these to take us to the level we want
+-Do you want to go up?
+	-click the up arrow button next to each elevator
+-Do you want to go down?
+	-click the down arrow button next to each elevator
+-When two doors slide open, does the arrow light above it point:
+	-up?
+	-down?
+	-if the arrow matches the direction you want to go, walk on to the elevator
+-once on the elevator turn 180 degrees so you are facing the doors
+-on the side of the doors there is a selection of buttons on the wall
+	-What floor do you want to go to?
+	-push the button that represents the floor of your destination: e.g.: 1, 2, 	
+	parking, basement, lobby etc.
+-Each time the elevator stops and the doors open
+	-look above the doors, what does this say?
+		-if the sign above the doors matches your destination
+			- walk off the elevator
+		-if the sign above the doors does not match your destination 
+			-stay on the elevator
+			-wait until next stop and repeat
+
+Making Coffee
+-Rinse coffee pot
+-How many cups of coffee do you want to make?
+	-fill the coffee pot with 1 cup of water per 1 cup of coffee you wish to make
+	-open lid to coffee maker
+	-find the big hollow section in the back of the coffee maker 
+		-is the side clear to show how much water it is filled with?
+			-if yes this is the where you should pour your water
+				-can you can see through the clear 	
+				window that your water is filling up the coffee machine?
+					-if yes, pour in all your water
+					-if no stop pouring
+			-if no, keep looking
+		-if no keep looking
+	-once you located and filled the water section of the coffee maker
+		-place the empty coffee pot on the flat bottom section of the coffee maker
+			-this is located under the coffee filter section
+			-the top of the coffee pot should be touching the bottom of the 			coffee filter section
+	-in the top there is an empty cup shaped section, clean this
+	-get a coffee filter, a slim cup shaped paper
+		-place coffee filter in the empty cup shaped section of the coffee maker
+		-make sure coffee filter is open like a cup, ready to be filled
+		-side of coffee filter should be touching all side of the cup shape of the 		coffee maker
+	-get a table spoon measurer
+	-get coffee grounds
+	-Refer back, how many cups of coffee are you making?
+		-how strong do you want your coffee?
+			-double strength?
+				-measure 2 tablespoons coffee grounds per 1 cup of coffee 				you want to make
+				-put coffee grounds in the coffee filter in the coffee pot
+			-regular strength?
+				-measure 1 tablespoon 1 coffee grounds per 1 cup of coffee 				you want to make
+				-put coffee grounds in the coffee filter in the coffee pot
+-close the top of the coffee pot
+-plug in coffee pot
+-press the “on” or “brew” button
+-the coffee pot should start running, you will hear a gurgling noise
+	-no noise?
+		-double check all the steps
+	-yes noise?
+		-wait 10 min
+		-now your coffee is done!
+	
+
+				
