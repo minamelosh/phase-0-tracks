@@ -7,3 +7,26 @@ class Puppy
 
 end
 
+=begin
+#Puppy Class Design
+
+#Species
+Type of Dog:
+
+
+#Characteristics
+Fur color:
+Fur type:
+size:
+Eye count:
+Leg count:
+Tail legnth:
+
+#Behavior
+Walks per day:
+Meals per day:
+Energy level:
+Sleep per day:
+Tricks:
+
+=end
