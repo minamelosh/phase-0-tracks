@@ -72,3 +72,24 @@ p add_item("grapefruit",list, 3)
 p remove_item("lemonade", list)
 p update_quantity("ice cream", list, 335)
 p cool_list(list)
+
+=begin
+Review and Reflect:
+What did you learn about pseudocode from working on this challenge?
+It is really important for organizing your program and all the methods you plan to create and what you will need to research for each one.
+
+What are the tradeoffs of using arrays and hashes for this challenge?
+Arrays require multiple data structures if you want to associate a grocery with it's quantity.  Hashes allow you to store the grocery with its quantity more easily and allows you easier access.
+
+What does a method return?
+What you assign as the return value, what it calculates/evaluates, or nil.
+
+What kind of things can you pass into methods as arguments?
+Almost any form of data you want.
+
+How can you pass information between methods?
+Parameters!
+
+What concepts were solidified in this challenge, and what concepts are still confusing?
+Using multiple methods together that share information.  I am still a little confused with .split and using a hash to create variables.
+=end
