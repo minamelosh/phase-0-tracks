@@ -5,7 +5,7 @@ class TodoList
    @list = items
   end
 
-  def gets_items
+  def get_items
     @list
   end
 
