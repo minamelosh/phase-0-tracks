@@ -31,7 +31,7 @@ describe Dancer do
   expect(dancer.card).to eq ["Mikhail Baryshnikov", "Anna Pavlova"]
 end
 
-it "can start the next dance in the queue" do
+  it "can start the next dance in the queue" do
   dancer.queue_dance_with("Mikhail Baryshnikov")
   dancer.queue_dance_with("Anna Pavlova")
   expect(dancer.begin_next_dance).to eq "Now dancing with Mikhail Baryshnikov."
