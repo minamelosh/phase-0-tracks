@@ -45,8 +45,8 @@ class Dancer
   def begin_next_dance()
     #@dancer_queue = @dancer_queue.delete_at(0)
     dancer = @dancer_queue[0]
-    @dancer_queue = @dancer_queue.delete(dancer)
-    return puts "Now dancing with #{dancer}."
+    @dancer_queue.delete(dancer)
+    return "Now dancing with #{dancer}."
   end
 
 end
