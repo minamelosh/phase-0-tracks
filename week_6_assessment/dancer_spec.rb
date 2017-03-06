@@ -1,3 +1,5 @@
+require_relative 'dancer'
+
 describe Dancer do
   let(:dancer) { Dancer.new("Misty Copeland", 33) }
 
@@ -13,4 +15,5 @@ describe Dancer do
     dancer.age = 34
     expect(dancer.age).to eq 34
   end
+
 end
