@@ -14,4 +14,12 @@ class Dancer
     @age
   end
 
+  def pirouette()
+    return "*twirls*"
+  end
+
+  def bow()
+    return "*bows*"
+  end
+
 end
