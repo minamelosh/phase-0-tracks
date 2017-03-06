@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #require_relative 'TodoList'
+=======
+require_relative 'TodoList'
+>>>>>>> 65ac8485be64d61f32760986f287a4eb55815497
 
 describe TodoList do
   let(:list) { TodoList.new(["do the dishes", "mow the lawn"]) }

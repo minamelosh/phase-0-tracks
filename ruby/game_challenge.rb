@@ -76,4 +76,4 @@ end
 play = Game.new()
 play.check_guess(play)
 play.win_lose(play)
-=end
+=
