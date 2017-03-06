@@ -28,6 +28,11 @@ class Dancer
     return "*bows*"
   end
 
+#Dance move leap!
+  def leap()
+    return "*leap*"
+  end
+
 #Add a dancer the the queue
   def queue_dance_with(name)
     @dancer_queue = @dancer_queue.push(name)
