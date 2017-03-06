@@ -38,12 +38,13 @@ class Dancer
     @dancer_queue = @dancer_queue.push(name)
   end
 
+#Returns current queue list of who you will dance with
   def card()
     @dancer_queue
   end
 
+#Lets you know who you are dancing with and updates the dancer queue
   def begin_next_dance()
-    #@dancer_queue = @dancer_queue.delete_at(0)
     dancer = @dancer_queue[0]
     @dancer_queue.delete(dancer)
     return "Now dancing with #{dancer}."
