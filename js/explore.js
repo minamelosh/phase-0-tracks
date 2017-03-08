@@ -7,3 +7,4 @@ function reverse(str){
 }
 
 reverse("hello");
+1==1;
