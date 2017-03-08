@@ -1,7 +1,7 @@
 function reverse(str){
-  var word = [];
+  var word = "";
   for (var i = str.length -1; i > -1; i -= 1){
-    word.push(str[i]);
+    word = word.concat(str[i]);
   }
   console.log(word);
 }
