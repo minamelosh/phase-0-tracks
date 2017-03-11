@@ -49,7 +49,9 @@ function fill_array(x){
 //------------------------------------------------------------------------------
 //driver code!
 //Release 0
-longest(["long word", "longest word", "longer word"]);
+console.log(longest(["long word", "longest word", "longer word"]));
+console.log(longest(["airplane", "car", "boat", "travel", "bus", "train"]));
+console.log(longest(["alphabet", "letters", "writing"]));
 
 //Release 1
 var steven = {name: "Steven", age: 54};
@@ -62,3 +64,14 @@ console.log(compare_key(mina, tamir));
 
 //Release 2
 console.log(fill_array(5));
+
+//Add driver code that does the following 10 times:
+//1.Generates an array prints the array
+//2. Feeds the array to your "longest word" function
+//3.prints the result
+var new_array = [];
+for (i=0; i < 10 ; i++){
+  new_array[i] = fill_array(Math.round((Math.random() * (10 - 1) + 1)));
+  console.log(new_array[i]);
+  console.log(longest(new_array[i]));
+}
