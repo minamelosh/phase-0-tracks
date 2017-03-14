@@ -1,0 +1,38 @@
+sqlite> SELECT * FROM guest_list;
+1|Mina Melosh|False|True|1
+2|Shinjo Popcorn|False|False|1
+3|Billy Joe|True|False|2
+4|Jesse Jones|True|True|2
+5|Lily Allen|True|False|1
+6|John Doe|False|False|2
+
+sqlite> UPDATE guest_list SET vegetarian="False" WHERE name="Mina Melosh";
+sqlite> SELECT * FROM guest_list;
+1|Mina Melosh|False|False|1
+2|Shinjo Popcorn|False|False|1
+3|Billy Joe|True|False|2
+4|Jesse Jones|True|True|2
+5|Lily Allen|True|False|1
+6|John Doe|False|False|2
+
+sqlite> SELECT * FROM guest_list, wedding_party WHERE guest_list.party_id=wedding_party.id;
+1|Mina Melosh|False|False|1|1|bride
+2|Shinjo Popcorn|False|False|1|1|bride
+3|Billy Joe|True|False|2|2|groom
+4|Jesse Jones|True|True|2|2|groom
+5|Lily Allen|True|False|1|1|bride
+6|John Doe|False|False|2|2|groom
+
+sqlite> SELECT guest_list.name, wedding_party.party FROM guest_list JOIN wedding_party ON guest_list.party_id=wedding_party.id;
+Mina Melosh|bride
+Shinjo Popcorn|bride
+Billy Joe|groom
+Jesse Jones|groom
+Lily Allen|bride
+John Doe|groom
+
+sqlite> DELETE FROM guest_list WHERE rsvp="False";
+sqlite> SELECT * FROM guest_list;
+3|Billy Joe|True|False|2
+4|Jesse Jones|True|True|2
+5|Lily Allen|True|False|1
