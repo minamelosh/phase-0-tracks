@@ -1,16 +1,21 @@
 Spend 10 minutes making a plan for how you intend to tackle jQuery and learn as much as you can in two hours.
+-jQuery: is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+
+-jQuery is a JavaScript Library.
+-jQuery greatly simplifies JavaScript programming.
+-jQuery is easy to learn.
 
 What sorts of resources will help?
+-cheat sheets
+-examples
+-tutorials
+-video guides
 
 How often should you stop and test what you just learned?
+-whenever I finish reading/learning about a new aspect of jQuery and I want to try applying it and making sure I understood it and can use it properly
 
 Are breaks important?
+-YES
 
 Make a few notes in the file on how you plan to approach the topic, and why.
-
-
-
-
-
-
-Make a jQuery project and add it to the jquery directory. It can be tiny, and it can do whatever you like, as long as you can say in good faith that you're practicing what you've learned and improving your jQuery skills.
+-Tutorial videos seemed to help me learn about jQuery the best! Following along, taking notes and then playing around with what I learned were great ways for me to practice and understand the uses jQuery has!
