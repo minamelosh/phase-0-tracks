@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>About My Pet</title>
+  <title>TURTLE</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="about-my-pet">
-    <img id="turtle-photo" src="turtle.jpg">
+  <div id="turtle">
+    <img id="turtle-photo" src="turtle.jpg" width="500" height="400" >
     <p>Why <em>my</em> turtle is <strong>great</strong>:</p>
     <ul>
       <li>goes with any decor</li>
       <li>comically <a href="http://grumpy.com">grumpy</a> looking</li>
+      <li>his name is Frank</li>
+      <li>he is speedy!</li>
+      <li>he is competitive - don't challenge him to a race!</li>
     </ul>
     <button id="hide">See it blend in!</button>
     <button id="show">Reveal the turtle!</button>
+    <button id="three">Color the turtle!</button>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
+
+<src=“jquery-3.2.0.js”></script>
+
+<script>
+
+  $(function(){
+    $('#three').hide(300);
+  });
+
+</script>
