@@ -29,20 +29,17 @@ end
 
 #Module 9.5
 #show student names and campus
-get '/student_campus' do 
+get '/student_campus' do
   @campuses = db.execute("SELECT * FROM campuses")
   erb :template
-end 
+end
 
-get '/new_campus' do 
+get '/new_campus' do
   erb :new_campus
-end 
+end
 
 post '/campuses' do
   p params['name']
   db.execute("INSERT INTO campuses (name) VALUES (?)", [params['name']])
   redirect '/student_campus'
 end
-
-
-
