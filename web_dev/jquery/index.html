@@ -11,9 +11,9 @@
     <ul>
       <li>goes with any decor</li>
       <li>comically <a href="http://grumpy.com">grumpy</a> looking</li>
-      <li>his name is Frank</li>
-      <li>he is speedy!</li>
-      <li>he is competitive - don't challenge him to a race!</li>
+      <li id="name">his name is Frank</li>
+      <li id="speedy">he is speedy!</li>
+      <li id="competitive">He is competitive - don't challenge him to a race!</li>
     </ul>
     <button id="hide">See it blend in!</button>
     <button id="show">Reveal the turtle!</button>
@@ -23,12 +23,31 @@
 </body>
 </html>
 
-<src=“jquery-3.2.0.js”></script>
+<script src="jquery-3.2.0.js"></script>
 
 <script>
 
   $(function(){
-    $('#three').hide(300);
+    $('#three').hide(1000);
+    $('#competitive').css({
+      fontWeight:'bold',
+      color: 'red'
+    });
+    $('#speedy').slideToggle(500).slideToggle(500);
+    $('#turtle-photo').on('click', function(){
+      $('#turtle-photo').css({
+        height:'700',
+        width:'800'
+      });
+    });
+    $('#name').on('click',function(){
+      $('#name').css({
+        fontSize: '30px',
+        fontWeight: 'bold',
+        color: 'blue'
+      });
+    });
+    $('#three').hide(1000);
   });
 
 </script>
